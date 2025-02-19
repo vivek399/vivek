@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #ff5733;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+        .menu-item {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: white;
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+        .order-form input, .order-form select, .order-form button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            font-size: 16px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pizza Delivery Service</h1>
+        <p>Delicious pizzas delivered straight to your door!</p>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="menu">
+        <h2>Our Pizza Menu</h2>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/200x150?text=Margherita" alt="Margherita Pizza">
+            <h3>Margherita</h3>
+            <p>$8.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/200x150?text=Pepperoni" alt="Pepperoni Pizza">
+            <h3>Pepperoni</h3>
+            <p>$10.99</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/200x150?text=Veggie" alt="Veggie Pizza">
+            <h3>Veggie</h3>
+            <p>$9.99</p>
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Place Your Order</h2>
+        <form class="order-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="pizza">Select Pizza:</label>
+            <select id="pizza" name="pizza" required>
+                <option value="margherita">Margherita - $8.99</option>
+                <option value="pepperoni">Pepperoni - $10.99</option>
+                <option value="veggie">Veggie - $9.99</option>
+            </select>
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Pizza Delivery Service | 123 Pizza St, Pizzaville | Contact: (123) 456-7890</p>
+    </footer>
+
+</body>
+</html>
